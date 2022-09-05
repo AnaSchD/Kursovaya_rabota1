@@ -19,27 +19,21 @@ public class Employee {
         return fullName;
     }
 
-    public String setFullName( String newFullName) {
-        this.fullName = newFullName;
-        return newFullName;
-    }
-
     public int getDepartmentNumber() {
         return departmentNumber;
     }
 
-    public int setDepartmentNumber(int newDepartmentNumber) {
+    public void setDepartmentNumber(int newDepartmentNumber) {
         this.departmentNumber = newDepartmentNumber;
-        return departmentNumber;
     }
 
     public double getSalary() {
         return salary;
     }
 
-    public double setSalary(double newSalary) {
+    public void setSalary(double newSalary) {
         this.salary = newSalary;
-        return salary;
     }
+
 
 }
