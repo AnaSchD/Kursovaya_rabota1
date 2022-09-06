@@ -8,11 +8,11 @@ public class Employee {
     private int id = counter;
 
 
-    public Employee(String fullName, int departmentNumber, double salary) {
+    public Employee (String fullName, int departmentNumber, double salary) {
         this.fullName = fullName;
         this.departmentNumber = departmentNumber;
         this.salary = salary;
-        counter++;
+        id = counter++;
     }
 
     public String getFullName() {
@@ -33,6 +33,15 @@ public class Employee {
 
     public void setSalary(double newSalary) {
         this.salary = newSalary;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    @Override
+    public String toString() {
+        return "Id: " + id + "Ф.И.О " + fullName + " Номер отдела " + departmentNumber + " зарплата сотрудника " + salary;
     }
 
 
