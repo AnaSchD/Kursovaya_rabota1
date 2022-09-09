@@ -22,7 +22,10 @@ public class Main {
         //sumOnDepartment(employee, 200, 1);
 
         //System.out.println(averageValueOfSalariesDep(employee, 1));
-        empDepartment(employee, 1);
+       // empDepartment(employee, 1);
+
+      //  salaryLessNumber(employee, 50000);
+        salaryMoreNumber(employee, 47000);
     }
 
     public static double sumOfSalaries(Employee[] emp) {
@@ -159,6 +162,23 @@ public class Main {
                 System.out.println("Сотрудник " + emp[i].getFullName() + " зарплата " + emp[i].getSalary());
             }
         }
+    }
 
+    public static void salaryLessNumber(Employee[] emp, double number) {
+
+        for (int i = 0; i < emp.length; i++) {
+            if (emp[i] != null && emp[i].getSalary() < number) {
+                System.out.println("Id: " + emp[i].getId() + " " + emp[i].getFullName() + " зарплата " + emp [i].getSalary());
+            }
+        }
+    }
+
+    public static void salaryMoreNumber(Employee[] emp, double number) {
+        for (int i = 0; i < emp.length; i++) {
+            if (emp[i] != null && emp[i].getSalary() >= number) {
+                System.out.println("Id: " + emp[i].getId() + " " + emp[i].getFullName() + " зарплата " + emp[i].getSalary());
+            }
+        }
     }
 }
+
